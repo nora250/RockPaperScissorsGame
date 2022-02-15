@@ -15,10 +15,18 @@ export const App = () => {
     }
   };
 
+  //✊、✌、✋を順番に表示する
+  const showRockPaperScissors = () => {
+    const arryRockPaperScissors = ["✊", "✌", "✋"];
+    arryRockPaperScissors.map((todo) => {
+      return console.log(todo);
+    });
+  };
+
   return (
     <React.Fragment>
       <h1>{openeddHand}</h1>
-      <button onClick={changeOpenedHand}>START</button>
+      <button onClick={showRockPaperScissors}>START</button>
     </React.Fragment>
   );
 };
